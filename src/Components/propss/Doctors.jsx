@@ -3,7 +3,7 @@ import { Card,Button } from 'react-bootstrap'
 
 const Doctors = (props) => {
   return (
-    <div>
+    <div style={{backgroundColor:props.bg ? 'white': 'black'}}>
       {
         props.doc.map(d=><div>
             <p>{d.doctorName}</p>
@@ -12,6 +12,8 @@ const Doctors = (props) => {
             <Button>Bookk appoinment</Button>
             </div>)
       }
+
+      <Button onClick={props.changBg}>Switch theme</Button>
     </div>
   )
 }

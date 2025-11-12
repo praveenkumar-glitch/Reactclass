@@ -8,6 +8,10 @@ import Amount from'./Components/Amount';
 import Arr from './Components/Arr';
 import Daily from './Components/Daily';
 import Parent from './Components/propss/Parent';
+import One from './Components/practice/One';
+import Pare from './Components/Project/Pare';
+import Anagram from './Components/practice/Anagram';
+import Basic from './Components/usestatecomp/Basic';
 
 
 function App() {
@@ -21,7 +25,12 @@ function App() {
       <Arr /> */}
       {/* <Daily /> */}
 
-      <Parent />
+      {/* <Parent /> */}
+      {/* <One /> */}
+      <Pare />
+      {/* <Anagram /> */}
+
+      {/* <Basic /> */}
     </div>
   );
 }

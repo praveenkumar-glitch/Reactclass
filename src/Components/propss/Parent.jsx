@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Child from './Child'
 import Doctors from './Doctors'
 import BookAppoint from './BookAppoint'
 import { Button } from 'react-bootstrap'
 
 const Parent = () => {
+
+  let [theme,setTheme]=useState(false)
+
+  function switchTheme(){
+    setTheme(!theme)
+  }
 
     let name='praveen'
     let age=20
@@ -64,14 +70,12 @@ console.log(doctors);
     <div>
       <p>this is parent page</p>
       <Child name={name} old={age} />
-      <Doctors doc={doctors}/>
-      <BookAppoint>
-
+      <Doctors doc={doctors} bg={theme} changBg={switchTheme}/>
+      <BookAppoint>      
        <div>
          {
             services.map(elm=><Button className='m-3'>{elm}</Button>)
         }
-
        </div>
       </BookAppoint>
 
