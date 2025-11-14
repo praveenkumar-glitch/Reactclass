@@ -12,6 +12,15 @@ import One from './Components/practice/One';
 import Pare from './Components/Project/Pare';
 import Anagram from './Components/practice/Anagram';
 import Basic from './Components/usestatecomp/Basic';
+import Usecom from './Components/Project/Usecom';
+import Main from './Components/Usestate/Main';
+import Count from './Components/Usestate/Count';
+import Product from './Components/Shopping/Product';
+import Formdata from './Components/usestatecomp/Formdata';
+import Form from './Components/Form';
+import Game from './Components/Game';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navv from './Components/Navv';
 
 
 function App() {
@@ -22,15 +31,23 @@ function App() {
       <Task />
       <Pro />
       <Amount />
-      <Arr /> */}
-      {/* <Daily /> */}
-
-      {/* <Parent /> */}
-      {/* <One /> */}
+      <Arr /> 
+      <Daily />
+      <Parent />
+      <One />
       <Pare />
-      {/* <Anagram /> */}
-
-      {/* <Basic /> */}
+      <Anagram />
+      <Basic />
+      <Usecom />
+      <Product />
+      <Form /> */}
+      <BrowserRouter>
+      <Navv />
+      <Routes>
+        <Route path='/game' element={<Game/>}/>
+        <Route path='/formdata'element={<Formdata/>}/>        
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

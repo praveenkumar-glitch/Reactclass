@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Chi from './Chi'
 import Add from './Add'
 import { Button } from 'react-bootstrap'
 import Mul from './Mul'
 const One = () => {
+  const[bgcolor,setbgcolor]=useState(true)
+
+  function change(){
+    setbgcolor(!bgcolor)
+  }
     let name="parveen"
     let age=21
     let address=[
@@ -20,7 +25,7 @@ const One = () => {
   return (
     <div>
       <Chi name={name} age={age}/>
-      <Add ad={address}/>
+      <Add ad={address} bg={bgcolor} background={change}/>
       <Mul>
         <div>
             {

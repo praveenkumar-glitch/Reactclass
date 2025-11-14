@@ -19,8 +19,6 @@ const Basic = () => {
         isshow ? <p>value available</p> :<p>products unavailable</p>
        }
 <Button onClick={()=>setSiz(val=>val+5)}>+</Button>
-
-
       <button onClick={()=>setIsShow(!isshow)}>{isshow ? 'hide':'show'}</button>
     </div>
   )
