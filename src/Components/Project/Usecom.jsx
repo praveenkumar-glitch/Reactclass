@@ -13,7 +13,7 @@ const Usecom = () => {
         <Button onClick={()=>setnum(va=>va+1)}>+</Button>
         <br />
         <Button style={{margin:"5px"}} onClick={()=>setbgcolor('green')}>green</Button>
-        <Button style={{margin:"5px"}} onClick={()=>setbgcolor('purple')}>purple</Button>
+        <Button style={{margin:"5px"}} onCl ick={()=>setbgcolor('purple')}>purple</Button>
         <Button style={{margin:"5px"}} onClick={()=>setbgcolor('yellow')}>yellow</Button>
     </div>
   )

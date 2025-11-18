@@ -21,6 +21,7 @@ import Form from './Components/Form';
 import Game from './Components/Game';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navv from './Components/Navv';
+import FromVal from './Components/practice/FromVal';
 
 
 function App() {
@@ -44,8 +45,12 @@ function App() {
       <BrowserRouter>
       <Navv />
       <Routes>
+        <Route path='/anagram' element={<Anagram />} />
         <Route path='/game' element={<Game/>}/>
-        <Route path='/formdata'element={<Formdata/>}/>        
+        <Route path='/formdata'element={<Formdata/>}/>  
+        <Route path='/mathpage/:id' element={<Math />} /> 
+        <Route path='/project' element={ <Pare />}   />  
+        <Route path='/formvalidation' element={<FromVal />} />
       </Routes>
       </BrowserRouter>
     </div>

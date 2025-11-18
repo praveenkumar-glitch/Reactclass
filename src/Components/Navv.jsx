@@ -13,7 +13,8 @@ const Navv = () => {
         <NavLink to='/formdata' style={({ isActive }) => ({ color: isActive ? 'green' : 'black' })}> Formdata</NavLink>
         <br />
 
-        <Link to="/game"><Button>game</Button></Link>
+        <Link to="/project"><Button>game</Button></Link>
+
 
     </div>
   )

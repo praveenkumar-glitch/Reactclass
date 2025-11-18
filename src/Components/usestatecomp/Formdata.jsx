@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Formdata = () => {
+
+    let navigate=useNavigate()
 
     let [user,setUser]=useState({
         name:'',
@@ -24,13 +27,24 @@ const Formdata = () => {
     function saveform(e){
         e.preventDefault()
         console.log(user);
+
+
+        // navigate('/anagram')
+                // navigate('/anagram',{state:user.name})
+
+
+                                navigate('/anagram',{state:{username:user.name, value:'listen'}})
+
+
         setUser({
         name:'',
         age:'',
         gender:'',
         lang:'',
       
-    })  
+    }) 
+    
+    
     }
   return (
     <div>
