@@ -46,18 +46,18 @@ const FromVal = () => {
 
       <form onSubmit={formik.handleSubmit}>
         <input placeholder='name' name='name' value={formik.values.name} onChange={formik.handleChange} />
-
         {formik.errors.name && <p className='text-danger'>{formik.errors.name}</p>}
-                <input placeholder='email' name='email'  value={formik.values.email} onChange={formik.handleChange} />
-                {formik.errors.email && <p className='text-danger'>{formik.errors.email}</p>}
+
+        <input placeholder='email' name='email'  value={formik.values.email} onChange={formik.handleChange} />
+         {formik.errors.email && <p className='text-danger'>{formik.errors.email}</p>}
 
 
         <input placeholder='phno' name='phno' value={formik.values.phno} onChange={formik.handleChange} />
-                        {formik.errors.phno && <p className='text-danger'>{formik.errors.phno}</p>}
+         {formik.errors.phno && <p className='text-danger'>{formik.errors.phno}</p>}
 
 
         <input placeholder='password' name='password' value={formik.values.password} onChange={formik.handleChange} />
-                        {formik.errors.password && <p className='text-danger'>{formik.errors.password}</p>}
+         {formik.errors.password && <p className='text-danger'>{formik.errors.password}</p>}
 
 <button>submit</button>
 
